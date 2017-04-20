@@ -84,6 +84,17 @@ video {
 .stopfade { 
    opacity: .5;
 }
+
+/*.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.navbar-brand.img-circle {
+    background-color: #fff;
+    height: 40px;
+    width: 40px;
+    color: #300075;
+}*/
 /*
 .jumbotron.home {
     background-image: url(../img/bg-index.jpg);
