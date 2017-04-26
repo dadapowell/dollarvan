@@ -8,6 +8,17 @@ body {
 h1, h2, h3, h4, h5 {
 	font-weight: 700;
 }
+a {
+    color: #300075;
+}
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.home h1 {
+    color: #300075;
+}
 
 main {
     min-height: 500px;
