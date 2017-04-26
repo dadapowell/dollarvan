@@ -70,13 +70,31 @@ video {
     height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
- background: url('../img/bg-index.jpg') no-repeat;
-  background-size: cover;
-  transition: 1s opacity;
+ 
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+.about video { background: url('../img/bg-index.jpg') no-repeat; }
+.maps video { background: url('../img/bg-maps.jpg') no-repeat; }
+.maps.container {
+    padding-top: 25px;
+    padding-bottom: 50px;
 }
 .stopfade { 
    opacity: .5;
 }
+
+/*.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.navbar-brand.img-circle {
+    background-color: #fff;
+    height: 40px;
+    width: 40px;
+    color: #300075;
+}*/
 /*
 .jumbotron.home {
     background-image: url(../img/bg-index.jpg);
