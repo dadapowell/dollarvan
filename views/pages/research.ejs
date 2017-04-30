@@ -1,0 +1,56 @@
+<%- contentFor('navbar') %>
+<div id="navbar" class="navbar-collapse collapse">
+  <ul class="nav navbar-nav">
+    <li><a href="/en/about">Van Info</a></li>
+    <li><a href="/en/maps">Van Maps</a></li>
+    <li><a href="/en/prototype">Prototype</a></li>
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">English <span class="glyphicon glyphicon-triangle-bottom"> </span></a>
+        <ul class="dropdown-menu">
+            <li><a href="/en">English</a></li>
+            <li><a href="/es">Español</a></li>
+            <li><a href="/zh">中文</a></li>
+          </ul>
+      </li>
+  </ul>
+</div><!--/.navbar-collapse -->
+
+<%- contentFor('hero') %>
+
+<section class="maps">
+    
+    <h2>Maps</h2>
+    <p class="lead">More routes to be added soon.</p>
+    
+    <video width="800" height="600" autoplay muted>
+    <!--
+        <source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">
+        <source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4">
+    -->
+    </video>
+
+</section>
+
+
+    
+<%- contentFor('body') %>
+
+<!--Team-->
+<article class="maps container">
+    <div class="row">
+
+        <div class="col-sm-4">
+            <h2>Eastern Queens</h2>
+            <img src="/img/jamaica.jpg" class="img-responsive" />
+        </div>
+        <div class="col-sm-4">
+            <h2>Chinatown</h2>
+            <img src="/img/chinatown.jpg" class="img-responsive" />
+        </div>
+        <div class="col-sm-4">
+            <h2>Flatbush</h2>
+            <img src="/img/flatbush.jpg" class="img-responsive" />
+        </div>
+
+    </div>
+</article>

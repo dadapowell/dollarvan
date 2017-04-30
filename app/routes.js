@@ -45,6 +45,9 @@ router.get('/prototypes', function(req, res) {
 router.get('/prototype', function(req, res) {
 	res.render("pages/en/prototype");
 });
+router.get('/research', function(req, res) {
+	res.render("pages/research");
+});
 
 router.get('/en', function(req, res) {
 	res.render("pages/en/index");
