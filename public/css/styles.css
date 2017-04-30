@@ -23,6 +23,9 @@ main {
     min-height: 500px;
 }
 .navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+}
+.navbar-inverse .navbar-nav>li>a:hover {
     color: #9474b4;
 }
 .navbar-inverse {
@@ -104,7 +107,7 @@ video {
 #maps { background: url('../img/bg-maps.jpg') no-repeat; }
 
 .maps.container {
-    padding-top: 25px;
+    padding-top: 75px;
     padding-bottom: 50px;
 }
 .stopfade { 
@@ -138,7 +141,7 @@ video {
     border-color: #300075;
     color: #300075;
 }
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary:active {
     background-color: #300075;
     color: #fff;
 }
