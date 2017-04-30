@@ -1,0 +1,165 @@
+<%- contentFor('navbar') %>
+<div id="navbar" class="navbar-collapse collapse">
+  <ul class="nav navbar-nav">
+    <li><a href="#about">Van Info</a></li>
+    <li><a href="#maps">Van Maps</a></li>
+    <li><a href="#prototype">Prototype</a></li>
+    <li class="dropdown">
+        <a href="/" class="dropdown-toggle" data-toggle="dropdown" role="button">English <span class="glyphicon glyphicon-triangle-bottom"> </span></a>
+        <ul class="dropdown-menu">
+            <li><a href="/en">English</a></li>
+            <li><a href="/es">Español</a></li>
+            <li><a href="/zh">中文</a></li>
+          </ul>
+      </li>
+  </ul>
+</div><!--/.navbar-collapse -->
+
+<%- contentFor('hero') %>
+
+<section class="home">
+    <h1>DollarVan<span style="font-weight: 400">.nyc</span></h1>
+    <h2>Transportation by the people, for the people</h2>
+</section>
+
+    
+<%- contentFor('body') %>
+<!--Features-->
+<article class="features secondary">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div>
+                    <a href="#about"><img src="/img/feature-info.jpg" class="img-rounded img-responsive" /></a>
+                </div>
+                <h3><a href="#about">Van Information</a></h3>
+                <p>Everything you need to know about dollar vans.</p>
+
+            </div>
+            <div class="col-sm-4">
+                <div>
+                    <a href="#maps"><img src="/img/feature-map.jpg" class="img-rounded img-responsive" /></a>
+                </div>
+                <h3><a href="#maps">Van Maps</a></h3>
+                <p>View route information for dollar vans in your area.</p>
+
+            </div>
+            <div class="col-sm-4">
+                <div>
+                    <a href="#prototype"><img src="/img/feature-tracker.jpg" class="img-rounded img-responsive" /></a>
+                </div>
+                <h3><a href="#prototype">Prototype</a></h3>
+                <p>Coming soon. See available licensed vans in real-time.</p>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+<!--About-->
+<header class="jumbotron" id="about">
+
+    <section class="container">
+        <section class="maps">
+
+            <h2>Van Information</h2>
+            <p class="lead">Everything you need to know about dollar vans.</p>
+
+        </section>
+    </section>
+    
+</header>
+<article class="container features">
+    <div class="row">
+        <div class="col-sm-4">
+            <h3>How To Ride</h3>
+            <p>You can board dollar vans at designated stops, or hail them just like a taxi. 
+                <strong>Queens, Flatbush</strong>: you can request a drop-off anywhere along the route. <strong>Chinatown, Flushing, Sunset Park</strong>: you must board and depart at designated stops.</p>
+        </div>
+        <div class="col-sm-4">
+            <h3>Van Fares</h3>
+            <p>Pay your driver before or after your ride.</p>
+            <p><strong>Queens, Flatbush</strong>: $2</p>
+            <p><strong>Chinatown, Flushing, Sunset Park</strong>: $3-4.</p>
+        </div>
+        <div class="col-sm-4">
+            <h3>Licensed Vans</h3>
+            <p>Riding Licensed Dollar Vans makes your ride safer. TLC (NYC Taxi &amp; Limousine Commission) runs background checks on all drivers. Vehicles must meet strict safety standards. Commuter Van operators must meet proper insurance and licensing requirements.</p>
+        </div>
+    </div>
+    <div class="row">
+        <img src="/img/van-info.jpg" class="img-responsive img-rounded" />
+    </div>
+    
+</article>
+
+<article class="secondary">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-6 col-sm-offset-3">
+                <h3>TLC-licensed Commuter Vans have visible markings:</h3>
+                <ul class="lead">
+                    <li>TLC blue diamond decals: located in each rear passenger door, the windshield and the rear door window.</li>
+                    <li>TLC-issued license plates: that either begin with T and end with C, or end with either: LV, LB, LA, or BB.</li>
+                    <li>Business information: about the van's owner and operator on the van body</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</article>
+
+<!--Maps-->
+<header class="jumbotron" id="maps">
+
+    <section class="container">
+        <section class="maps">
+
+            <h2>Maps</h2>
+            <p class="lead">View route information for dollar vans in your area.</p>
+
+        </section>
+    </section>
+    
+</header>
+<article class="maps container">
+    <div class="row">
+
+        <div class="col-sm-4">
+            <h2>Eastern Queens</h2>
+            <img src="/img/jamaica.jpg" class="img-responsive" />
+        </div>
+        <div class="col-sm-4">
+            <h2>Chinatown</h2>
+            <img src="/img/chinatown.jpg" class="img-responsive" />
+        </div>
+        <div class="col-sm-4">
+            <h2>Flatbush</h2>
+            <img src="/img/flatbush.jpg" class="img-responsive" />
+        </div>
+
+    </div>
+</article>
+
+<!--Prototype-->
+<header class="jumbotron secondary" id="prototype">
+
+    <section class="container">
+        <section class="prototype">
+
+            <h2>Prototype</h2>
+            <p class="lead">Coming soon. See available licensed vans in real-time.</p>
+
+        </section>
+    </section>
+    
+</header>
+<article class="maps container">
+    <div class="row">
+
+        <div class="col-sm-4 col-sm-offset-4">
+            <iframe width="377" height="667" src="https://xd.adobe.com/embed/80cb9e01-3814-4c66-b954-e29212beecdf/" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+    </div>
+</article>

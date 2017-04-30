@@ -1,0 +1,169 @@
+<%- contentFor('navbar') %>
+<div id="navbar" class="navbar-collapse collapse">
+  <ul class="nav navbar-nav">
+    <li><a href="#about">Van Info</a></li>
+    <li><a href="#maps">Van Maps</a></li>
+    <li><a href="#prototype">Prototype</a></li>
+    <li class="dropdown">
+        <a href="/" class="dropdown-toggle" data-toggle="dropdown" role="button">中文 <span class="glyphicon glyphicon-triangle-bottom"> </span></a>
+        <ul class="dropdown-menu">
+            <li><a href="/en">English</a></li>
+            <li><a href="/es">Español</a></li>
+            <li><a href="/zh">中文</a></li>
+          </ul>
+      </li>
+  </ul>
+</div><!--/.navbar-collapse -->
+
+<%- contentFor('hero') %>
+
+<section class="home">
+    <h1>DollarVan<span style="font-weight: 400">.nyc</span></h1>
+    <h2>民營和民享的交通出行</h2>
+</section>
+
+
+<%- contentFor('cta') %>
+<a class="btn btn-lg btn-primary" href="/about" target="_blank" role="button"></a>
+
+
+    
+<%- contentFor('body') %>
+<!--Features-->
+<article class="features secondary">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div>
+                    <a href="#about"><img src="/img/feature-info.jpg" class="img-rounded img-responsive" /></a>
+                </div>
+                <h3><a href="#about">小巴信息</a></h3>
+                <p>關於小巴您所需要知道的一切。</p>
+
+            </div>
+            <div class="col-sm-4">
+                <div>
+                    <a href="#maps"><img src="/img/feature-map.jpg" class="img-rounded img-responsive" /></a>
+                </div>
+                <h3><a href="#maps">小巴地圖</a></h3>
+                <p>查看您所在區域小巴的路線信息</p>
+
+            </div>
+            <div class="col-sm-4">
+                <div>
+                    <a href="#prototypes"><img src="/img/feature-tracker.jpg" class="img-rounded img-responsive" /></a>
+                </div>
+                <h3><a href="#prototypes">Prototypes</a></h3>
+                <p>實時獲知政府許可小巴的位置。敬請期待。</p>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+<!--About-->
+<header class="jumbotron" id="about">
+
+    <section class="container">
+        <section class="maps">
+
+            <h2>Van Information</h2>
+            <p class="lead">Everything you need to know about dollar vans.</p>
+
+        </section>
+    </section>
+    
+</header>
+<article class="container features">
+    <div class="row">
+        <div class="col-sm-4">
+            <h3>如何乘坐</h3>
+            <p>您可以在小巴指定車站上下車，也可攔招上車。東皇后區、夫拉特布殊大道：您可以請求在沿線任何地點下車。中國城-布碌侖-法拉盛：一般您只能在指定車站附近下車。</p>
+        </div>
+        <div class="col-sm-4">
+            <h3>小巴車費</h3>
+            <p>請在上車時</p>
+            <p>東皇后區、夫拉特布殊大道：2美元</p>
+            <p>中國城-布碌侖-法拉盛：3-4美元</p>
+        </div>
+        <div class="col-sm-4">
+            <h3>政府許可的小巴</h3>
+            <p>乘坐政府許可的小巴可以確保您出行更加安全。紐約市計程車及出租車管理局（TLC）會對所有司機進行背景調查。車輛必須滿足嚴格的安全標準。小巴運營個人或公司也必須滿足其他特定的保險和許可要求。</p>
+        </div>
+    </div>
+    <div class="row">
+        <img src="/img/van-info.jpg" class="img-responsive img-rounded" />
+    </div>
+    
+</article>
+
+<article class="secondary">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-6 col-sm-offset-3">
+                <h3>紐約市計程車及出租車管理局（TLC）許可的小巴具有一些可以識別的標誌：</h3>
+                <ul class="lead">
+                    <li>紐約市計程車及出租車管理局（TLC）藍色鑽石標籤：一般位於小巴後門、後門玻璃或擋風玻璃上。</li>
+                    <li>紐約市計程車及出租車管理局（TLC）頒發的車牌：一般以字母T開頭并以字母C結尾，或以字母LV、LB、LA或BB結尾。</li>
+                    <li>商用信息：一般位於車身的關於小巴所有者或運營者的信息</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</article>
+
+<!--Maps-->
+<header class="jumbotron" id="maps">
+
+    <section class="container">
+        <section class="maps">
+
+            <h2>地圖</h2>
+            <p class="lead">查看您所在區域小巴的路線信息</p>
+
+        </section>
+    </section>
+    
+</header>
+<article class="maps container">
+    <div class="row">
+
+        <div class="col-sm-4">
+            <h2>Eastern Queens</h2>
+            <img src="/img/jamaica.jpg" class="img-responsive" />
+        </div>
+        <div class="col-sm-4">
+            <h2>Chinatown</h2>
+            <img src="/img/chinatown.jpg" class="img-responsive" />
+        </div>
+        <div class="col-sm-4">
+            <h2>Flatbush</h2>
+            <img src="/img/flatbush.jpg" class="img-responsive" />
+        </div>
+
+    </div>
+</article>
+
+<!--Prototype-->
+<header class="jumbotron secondary" id="prototype">
+
+    <section class="container">
+        <section class="prototype">
+
+            <h2>Prototype</h2>
+            <p class="lead">實時獲知政府許可小巴的位置。敬請期待。</p>
+
+        </section>
+    </section>
+    
+</header>
+<article class="maps container">
+    <div class="row">
+
+        <div class="col-sm-4 col-sm-offset-4">
+            <iframe width="377" height="667" src="https://xd.adobe.com/embed/80cb9e01-3814-4c66-b954-e29212beecdf/" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+    </div>
+</article>

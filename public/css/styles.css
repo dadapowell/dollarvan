@@ -17,11 +17,14 @@ a:hover {
 }
 
 .home h1 {
-    color: #300075;
+    color: #fff;
 }
 
 main {
     min-height: 500px;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #9474b4;
 }
 .navbar-inverse {
     background-color: #300075;
@@ -58,6 +61,7 @@ article {
 
 .jumbotron {
     background-color: transparent;
+    margin-bottom: 0;
 }
 
 .about {
@@ -69,6 +73,12 @@ article {
     color: #fff;
     padding-top: 25px;
     padding-bottom: 75px;
+}
+.secondary p, .secondary li {
+    color: #9474b4;
+}
+.secondary a {
+    color: #fff;
 }
 
 video { 
@@ -88,6 +98,10 @@ video {
 
 .about video { background: url('../img/bg-index.jpg') no-repeat; }
 .maps video { background: url('../img/bg-maps.jpg') no-repeat; }
+
+#about { background: url('../img/bg-index.jpg') no-repeat; }
+#maps { background: url('../img/bg-maps.jpg') no-repeat; }
+
 .maps.container {
     padding-top: 25px;
     padding-bottom: 50px;

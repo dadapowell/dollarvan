@@ -17,7 +17,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body id="top">
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
@@ -28,21 +28,17 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/"><strong>DollarVan</strong>.nyc</a>
+      <a class="navbar-brand" href="#top"><strong>DollarVan</strong>.nyc</a>
     </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li><a href="/about">Van Info</a></li>
-        <li><a href="/maps">Van Maps</a></li>
-        <li><a href="#language">English <span class="glyphicon glyphicon-triangle-bottom"> </span></a></li>
-      </ul>
-    </div><!--/.navbar-collapse -->
+    
+    <%- defineContent('navbar') %>
+    
   </div>
 </nav>
     
     
 <!-- MAIN CONTENT HERE -->
-<header class="jumbotron">
+<header class="jumbotron secondary">
     <section class="container">
         <%- defineContent('hero') %>
     </section>
@@ -61,5 +57,31 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+<script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+</script>
 </body>
 </html>
