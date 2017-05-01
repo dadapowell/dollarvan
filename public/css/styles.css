@@ -15,9 +15,12 @@ a:hover {
     text-decoration: none;
     color: #000;
 }
-
+.home {
+/*    padding-top: 150px;*/
+}
 .home h1 {
     color: #fff;
+    margin-top: 125px;
 }
 .home h2 {
     color: #9474b4;
@@ -176,7 +179,7 @@ BUTTONS
 }
 
 @media screen and (min-width: 768px){
-    .jumbotron {
+    #maps, #about {
         padding-top: 150px;
     }
     .maps.container {
