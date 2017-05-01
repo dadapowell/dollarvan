@@ -163,6 +163,17 @@ BUTTONS
     color: #fff;
     outline: none;
 }
+.btn-default {
+    background-color: #300075;
+    border-color: #9474b4;
+    color: #fff;
+}
+.btn-default:hover, .btn-default:active, .btn-default.active, .btn-default:focus {
+    background-color: transparent !important;
+    border-color: #9474b4 !important;
+    color: #9474b4;
+    outline: none;
+}
 
 @media screen and (min-width: 768px){
     .jumbotron {
