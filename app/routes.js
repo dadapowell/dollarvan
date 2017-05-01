@@ -52,36 +52,11 @@ router.get('/research', function(req, res) {
 router.get('/en', function(req, res) {
 	res.render("pages/en/index");
 });
-router.get('/en/about', function(req, res) {
-	res.render("pages/en/about");
-});
-router.get('/en/maps', function(req, res) {
-	res.render("pages/en/maps");
-});
-router.get('/en/prototype', function(req, res) {
-	res.render("pages/en/prototype");
-});
+
 router.get('/es', function(req, res) {
 	res.render("pages/es/index");
 });
-router.get('/es/about', function(req, res) {
-	res.render("pages/es/about");
-});
-router.get('/es/maps', function(req, res) {
-	res.render("pages/es/maps");
-});
-router.get('/es/prototype', function(req, res) {
-	res.render("pages/es/prototype");
-});
+
 router.get('/zh', function(req, res) {
 	res.render("pages/zh/index");
-});
-router.get('/zh/about', function(req, res) {
-	res.render("pages/zh/about");
-});
-router.get('/zh/maps', function(req, res) {
-	res.render("pages/zh/maps");
-});
-router.get('/zh/prototype', function(req, res) {
-	res.render("pages/zh/prototype");
 });

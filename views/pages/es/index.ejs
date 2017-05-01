@@ -4,7 +4,7 @@
     <li><a href="#about">Información</a></li>
     <li><a href="#maps">Mapas</a></li>
     <li><a href="#prototype">Prototype</a></li>
-    <li><a href="/research">Research</a></li>
+    <li><a href="/research" class="hidden">Research</a></li>
     <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Español <span class="glyphicon glyphicon-triangle-bottom"> </span></a>
         <ul class="dropdown-menu">
@@ -93,7 +93,7 @@
             <p>Usar Dollar Vans con licencia hace tu viaje mucho más seguro. TLC (La comisión de taxi y limusinas, por sus siglas en inglés) se asegura de que los conductores no tengan historia criminal. Las Dollar Vans han de cumplir rigurosos estandars de seguridad. Finalmente, la TLC hace que los operadores tengan los seguros reglamentarios.</p>
         </div>
     </div>
-    <div class="row">
+    <div class="row hidden">
         <img src="/img/van-info.jpg" class="img-responsive img-rounded" />
     </div>
     
@@ -131,41 +131,108 @@
 <article class="maps container">
     <div class="row">
 
-        <div class="col-sm-4">
-            <h2>Eastern Queens</h2>
-            <img src="/img/jamaica.jpg" class="img-responsive" />
+        <div class="col-sm-4 download-maps">
+            <h4>Eastern Queens</h4>
+            <img src="/img/jamaica.jpg" class="img-responsive hidden-xs" />
+            <a href="/img/jamaica.jpg" download class="btn btn-lg btn-primary">Download <span class="glyphicon glyphicon-download"> </span></a>
         </div>
-        <div class="col-sm-4">
-            <h2>Chinatown</h2>
-            <img src="/img/chinatown.jpg" class="img-responsive" />
+        <div class="col-sm-4 download-maps">
+            <h4>Chinatown / Sunset Park / Flushing</h4>
+            <img src="/img/chinatown.jpg" class="img-responsive hidden-xs" />
+            <a href="/img/chinatown.jpg" download class="btn btn-lg btn-primary">Download <span class="glyphicon glyphicon-download"> </span></a>
         </div>
-        <div class="col-sm-4">
-            <h2>Flatbush</h2>
-            <img src="/img/flatbush.jpg" class="img-responsive" />
+        <div class="col-sm-4 download-maps">
+            <h4>Flatbush / Utica</h4>
+            <img src="/img/flatbush.jpg" class="img-responsive hidden-xs" />
+            <a href="/img/flatbush.jpg" download class="btn btn-lg btn-primary">Download <span class="glyphicon glyphicon-download"> </span></a>
         </div>
 
     </div>
 </article>
 
 <!--Prototype-->
-<header class="jumbotron secondary" id="prototype">
+<article class="maps container" id="prototype">
+    <section class="visible-xs visible-sm">
 
-    <section class="container">
-        <section class="prototype">
+        <h2>Prototypes</h2>
 
-            <h2>Prototype</h2>
-            <p class="lead">Próximamente podrás ver las Dollar Vans con licencia en tiempo real.</p>
-
-        </section>
     </section>
-    
-</header>
-<article class="maps container">
     <div class="row">
 
-        <div class="col-sm-4 col-sm-offset-4">
-            <iframe width="377" height="667" src="https://xd.adobe.com/embed/80cb9e01-3814-4c66-b954-e29212beecdf/" frameborder="0" allowfullscreen></iframe>
+        <div class="col-sm-4 text-center">
+            
+            <img src="/img/prototype-en.png" class="img-prototype img-responsive hidden-sm hidden-xs" data-toggle="modal" data-target="#enModal" />
+            <a class="btn btn-lg btn-primary visible-xs visible-sm" data-toggle="modal" data-target="#enModal">English</a>
+            
+        </div>
+        <div class="col-sm-4 text-center">
+            
+            <img src="/img/prototype-es.png" class="img-prototype img-responsive hidden-sm hidden-xs" data-toggle="modal" data-target="#esModal" />
+            <a class="btn btn-lg btn-primary visible-xs visible-sm" data-toggle="modal" data-target="#esModal">Español</a>
+            
+        </div>
+        <div class="col-sm-4 text-center">
+            
+            <img src="/img/prototype-zh.png" class="img-prototype img-responsive hidden-sm hidden-xs" data-toggle="modal" data-target="#zhModal" />
+            <a class="btn btn-lg btn-primary visible-xs visible-sm" data-toggle="modal" data-target="#zhModal">中文</a>
+            
         </div>
 
     </div>
+    
+    
 </article>
+
+<!-- 中文 Modal -->
+<div class="modal fade" id="zhModal" tabindex="-1" role="dialog" aria-labelledby="zhModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="zhModalLabel">中文</h4>
+      </div>
+      <div class="modal-body text-center">
+        <iframe width="377" height="667" src="https://xd.adobe.com/embed/460aa3b4-42a8-4650-8c18-e33396c724e4/" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close Window</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Español Modal -->
+<div class="modal fade" id="esModal" tabindex="-1" role="dialog" aria-labelledby="esModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="esModalLabel">Español</h4>
+      </div>
+      <div class="modal-body text-center">
+        <iframe width="377" height="667" src="https://xd.adobe.com/embed/164baea5-ea76-4ba4-b0d1-f3fa76f12265/" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close Window</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- English Modal -->
+<div class="modal fade" id="enModal" tabindex="-1" role="dialog" aria-labelledby="enModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="enModalLabel">English</h4>
+      </div>
+      <div class="modal-body text-center">
+        <iframe width="377" height="667" src="https://xd.adobe.com/embed/80cb9e01-3814-4c66-b954-e29212beecdf/" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close Window</button>
+      </div>
+    </div>
+  </div>
+</div>
