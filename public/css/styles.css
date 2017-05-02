@@ -57,6 +57,11 @@ article {
     margin-bottom: 30px;
 }
 
+.img-thumbnail {
+    background-color: transparent;
+    border: 1px solid #9474b4;
+    border-radius: 0;
+}
 .text-center>img {
     margin: 0 auto;
 }
@@ -124,10 +129,15 @@ video {
 .download-maps {
     padding-bottom: 35px;
 }
-.stopfade { 
-   opacity: .5;
+
+.research-sidebar img {
+    margin-bottom: 12px;
 }
 
+
+/*
+VIDEO
+*/
 .embed-container { 
     position: relative; 
     padding-bottom: 56.25%; 
