@@ -1,33 +1,12 @@
 <%- contentFor('navbar') %>
-<div id="navbar" class="navbar-collapse collapse">
-  <ul class="nav navbar-nav">
-    <li><a href="#video">Información</a></li>
-    <li><a href="#maps">Mapas</a></li>
-    <li><a href="#prototype">Prototipo</a></li>
-    <li><a href="/research" class="hidden">Research</a></li>
-    <li class="dropdown">
-        <a href="/" class="dropdown-toggle" data-toggle="dropdown" role="button">Español <span class="glyphicon glyphicon-triangle-bottom"> </span></a>
-        <ul class="dropdown-menu">
-            <li><a href="/en">English</a></li>
-            <li><a href="/es">Español</a></li>
-            <li><a href="/zh">中文</a></li>
-          </ul>
-      </li>
-  </ul>
-</div><!--/.navbar-collapse -->
+<% include ../../partials/nav-es %>
 
 
 <%- contentFor('hero') %>
-
 <section class="home">
     <h1>DollarVan<span style="font-weight: 400">.nyc</span></h1>
     <h2>El transporte de tu gente para tu gente</h2>
 </section>
-
-
-<%- contentFor('cta') %>
-<a class="btn btn-lg btn-primary" href="/about" target="_blank" role="button"></a>
-
 
     
 <%- contentFor('body') %>

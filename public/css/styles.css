@@ -57,6 +57,9 @@ article {
     margin-bottom: 30px;
 }
 
+/*
+BOOTSTRAP OVERRIDES
+*/
 .img-thumbnail {
     background-color: transparent;
     border: 1px solid #9474b4;
@@ -65,7 +68,9 @@ article {
 .text-center>img {
     margin: 0 auto;
 }
-
+.form-control {
+    max-width: 100%;
+}
 .translate {
 	color: #999;
 }
@@ -97,6 +102,11 @@ article {
     color: #fff;
 }
 
+/*
+
+VIDEO BACKGROUND
+
+*/
 video { 
     position: fixed;
     top: 50%;
@@ -186,6 +196,12 @@ BUTTONS
     border-color: #9474b4 !important;
     color: #9474b4;
     outline: none;
+}
+
+#mc_embed_signup{
+    background:#fff; 
+    clear:left; 
+    font:14px "Rubik",Helvetica,Arial,sans-serif; 
 }
 
 @media screen and (min-width: 768px){
