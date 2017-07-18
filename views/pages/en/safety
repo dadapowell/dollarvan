@@ -1,0 +1,23 @@
+
+<%- contentFor('hero') %>
+
+<h1>Dollar Van<span style="font-weight: 400">.nyc</span></h1>
+<h2>Safety</h2>
+
+
+    
+<%- contentFor('body') %>
+
+<!--Team-->
+<div class="row">
+    
+    <% for (user of users) { %>
+        
+        <div class="col-sm-3">
+            <h4><%= user.name %></h4>
+            <p><%= user.role %></p>
+        </div>
+        
+    <% } %>
+
+</div>
