@@ -8,16 +8,30 @@
     
 <%- contentFor('body') %>
 
-<!--Team-->
-<div class="row">
-    
-    <% for (user of users) { %>
-        
-        <div class="col-sm-3">
-            <h4><%= user.name %></h4>
-            <p><%= user.role %></p>
+<article class="container features">
+    <div class="row">
+        <div class="col-sm-12">
+            <p>Riding Licensed Dollar Vans makes your ride safer. TLC (NYC Taxi &amp; Limousine Commission) runs background checks on all drivers. Vehicles must meet strict safety standards. Commuter Van operators must meet proper insurance and licensing requirements.</p>
         </div>
-        
-    <% } %>
+    </div>
+    <div class="row">
+        <img src="/img/van-info-lightpurp.png" class="img-responsive img-rounded" alt="TLC-licensed Commuter Vans have visible markings" />
+    </div>
+    
+</article>
 
-</div>
+<article class="secondary">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-6 col-sm-offset-3">
+                <h3>How To Identify a Safe Van in 3 Steps:</h3>
+                <ol class="lead">
+                    <li><strong>Look for the TLC blue diamond decals</strong>: located in each rear passenger door, the windshield, and the rear door window.</li>
+                    <li><strong>Have a look at the plate</strong>: TLC-issued license plates either begin with T and end with C, or end with either: LV, LB, LA, or BB.</li>
+                    <li><strong>Pay attention to the business information</strong>: On the van body you can check the van's owner and operator.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</article>

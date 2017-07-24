@@ -23,6 +23,11 @@ router.get('/about', function(req, res) {
 	res.render("pages/en/about");
 });
 
+// route for safety page
+router.get('/safety', function(req, res) {
+	res.render("pages/en/safety");
+});
+
 // route for team page
 router.get('/team', function(req, res) {
     var users = [
