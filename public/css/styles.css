@@ -57,6 +57,15 @@ article {
     margin-bottom: 30px;
 }
 
+.safety li {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.safety h3 {
+    margin-bottom: 10px;
+}
+
+
 /*
 BOOTSTRAP OVERRIDES
 */
