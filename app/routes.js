@@ -33,6 +33,11 @@ router.get('/myvan', function(req, res) {
 	res.render("pages/en/myvan");
 });
 
+// route for 'my van' page
+router.get('/tracker', function(req, res) {
+	res.render("pages/en/tracker");
+});
+
 // route for team page
 router.get('/team', function(req, res) {
     var users = [
