@@ -28,6 +28,11 @@ router.get('/safety', function(req, res) {
 	res.render("pages/en/safety");
 });
 
+// route for 'my van' page
+router.get('/myvan', function(req, res) {
+	res.render("pages/en/myvan");
+});
+
 // route for team page
 router.get('/team', function(req, res) {
     var users = [
