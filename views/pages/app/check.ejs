@@ -34,15 +34,16 @@
 
 <script>
     const apiURL = "https://dollarvan-reviews.herokuapp.com/";
-    const dvid = "";
+    let dvid;
     $('#pincode-input').pincodeInput({inputs:4,hidedigits:false,complete:function(value, e, errorElement){
         console.log("ID: " + value);
         dvid = value;
-        $.get("https://dollarvan-reviews.herokuapp.com/api/vans/dvid/" + value, function(data){
-            console.log(data);
-        })
+//        $.get("https://dollarvan-reviews.herokuapp.com/api/vans/dvid/" + value, function(data){
+//            console.log(data);
+//        })
     }});
     $('#submit').click(function() {
         window.location.href = apiURL + dvid;
+//        console.log(apiURL + dvid);
     });
 </script>
