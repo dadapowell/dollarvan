@@ -27,7 +27,7 @@ a:hover {
 }
 
 main {
-    min-height: 500px;
+
 }
 .navbar-inverse .navbar-nav>li>a {
     color: #fff;
@@ -54,7 +54,7 @@ main {
     background-color: #fff;
 }
 article {
-    margin-bottom: 30px;
+
 }
 
 .safety li {
@@ -109,6 +109,17 @@ BOOTSTRAP OVERRIDES
 }
 .secondary a {
     color: #fff;
+}
+
+.app-blue {
+    background-color: #5498f6;
+    color: #fff;
+    padding-top: 25px;
+    padding-bottom: 75px;
+}
+
+.app-dark-gray {
+    background-color: #9b9b9b;
 }
 
 /*
@@ -197,13 +208,14 @@ BUTTONS
 }
 .btn-default {
     background-color: #300075;
-    border-color: #9474b4;
+    border-color: #300075;
     color: #fff;
+    width: 100%;
 }
 .btn-default:hover, .btn-default:active, .btn-default.active, .btn-default:focus {
     background-color: transparent !important;
-    border-color: #9474b4 !important;
-    color: #9474b4;
+    border-color: #300075 !important;
+    color: #300075;
     outline: none;
 }
 

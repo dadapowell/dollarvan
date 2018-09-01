@@ -78,3 +78,10 @@ router.get('/es', function(req, res) {
 router.get('/zh', function(req, res) {
 	res.render("pages/zh/index");
 });
+
+router.get('/app', function(req, res) {
+	res.render("pages/app/index", { layout: 'layout-app' });
+});
+router.get('/check', function(req, res) {
+	res.render("pages/app/check", { layout: 'layout-app' });
+});

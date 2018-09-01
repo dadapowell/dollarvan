@@ -7,6 +7,7 @@ var express = require("express"),
 // use ejs and express layouts
 // must come before router
 app.set("view engine", "ejs");
+app.set("layout extractScripts", true);
 app.use(expressLayouts);
 
 // route our app
