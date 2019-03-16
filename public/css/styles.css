@@ -127,7 +127,7 @@ BOOTSTRAP OVERRIDES
 VIDEO BACKGROUND
 
 */
-video { 
+video {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -137,7 +137,7 @@ video {
     height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
- 
+
     background-size: cover;
     transition: 1s opacity;
 }
@@ -168,19 +168,19 @@ video {
 /*
 VIDEO
 */
-.embed-container { 
-    position: relative; 
-    padding-bottom: 56.25%; 
-    height: 0; 
-    overflow: hidden; 
-    max-width: 100%; 
-} 
-.embed-container iframe, .embed-container object, .embed-container embed { 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%; 
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+.embed-container iframe, .embed-container object, .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /*
@@ -195,14 +195,15 @@ BUTTONS
 #prototype .btn-lg {
     min-width: 215px;
 }
-.btn-primary {
-    background-color: transparent;
+.btn-primary, .secondary a.btn-primary {
+    background-color: #fff;
     border-color: #300075;
     color: #300075;
 }
-.btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary:focus {
+.btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary:focus,
+.secondary a.btn-primary:hover, .secondary a.btn-primary:active, .secondary a.btn-primary.active, .secondary a.btn-primary:focus {
     background-color: #300075 !important;
-    border-color: #300075 !important;
+    border-color: #9474b4 !important;
     color: #fff;
     outline: none;
 }
@@ -220,9 +221,9 @@ BUTTONS
 }
 
 #mc_embed_signup{
-    background:#fff; 
-    clear:left; 
-    font:14px "Rubik",Helvetica,Arial,sans-serif; 
+    background:#fff;
+    clear:left;
+    font:14px "Rubik",Helvetica,Arial,sans-serif;
 }
 
 @media screen and (min-width: 768px){
