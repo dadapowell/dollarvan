@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/dadapowell/dollarvan#readme",
   "dependencies": {
-    "bootstrap-pincode-input": "^1.4.0",
     "ejs": "^3.1.9",
     "express": "^4.16.3",
     "express-ejs-layouts": "^2.3.0",

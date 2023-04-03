@@ -1,7 +1,6 @@
 body {
 	font-family: "Rubik", Helvetica, sans-serif;
 	font-weight: 400;
-    padding-top: 50px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -10,9 +9,9 @@ h1, h2, h3, h4, h5 {
 a {
     color: #300075;
     cursor: pointer;
+    text-decoration: underline;
 }
 a:hover {
-    /* text-decoration: none; */
     color: #000;
 }
 .home {
@@ -28,6 +27,10 @@ a:hover {
 
 main {
 
+}
+
+nav a {
+    text-decoration: none;
 }
 .navbar-inverse .navbar-nav>li>a {
     color: #fff;
@@ -141,12 +144,6 @@ video {
     background-size: cover;
     transition: 1s opacity;
 }
-
-.about video { background: url('../img/bg-index.jpg') no-repeat; }
-.maps video { background: url('../img/bg-maps.jpg') no-repeat; }
-
-#about { background: url('../img/bg-index.jpg') no-repeat; }
-#maps { background: url('../img/bg-maps.jpg') no-repeat; }
 
 .maps.container {
 /*    padding-top: 75px;*/

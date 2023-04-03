@@ -9,7 +9,6 @@
 
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Rubik:400,700" rel="stylesheet">
-    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="/css/styles.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -31,74 +30,37 @@
 
     </script>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/"><strong>DollarVan</strong>.nyc</a>
+  <nav class="navbar navbar-inverse fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        
+        <a class="navbar-brand" href="/"><strong>DollarVan</strong>.nyc</a>
+      </div>
+
     </div>
-
-    <%- defineContent('navbar') %>
-
-  </div>
-</nav>
+  </nav>
 
 
-<!-- MAIN CONTENT HERE -->
-<header class="jumbotron secondary">
-    <section class="container">
-        <%- defineContent('hero') %>
-    </section>
-</header>
+  <!-- MAIN CONTENT HERE -->
+  <!-- <header class="jumbotron secondary">
+      <section class="container">
+          <%- defineContent('hero') %>
+      </section>
+  </header> -->
 
-<main>
-    <%- body %>
-</main>
+  <main>
+      <%- body %>
+  </main>
 
-<footer>
-    <section class="container">
-        <p>&copy; 2023 DollarVan.nyc.<br />
-    </section>
-</footer>
+  <footer>
+      <section class="container">
+        <div class="row">
+          <p>&copy; 2023 DollarVan.nyc.<br />
+        </div>
+      </section>
+  </footer>
 
-<script src="/js/jquery-3.2.1.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-<script src="/js/ie10-viewport-bug-workaround.js"></script>
-<script>
-    $(document).ready(function(){
-        // Add smooth scrolling to all links
-        $("a").on('click', function(event) {
-
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-              // Prevent default anchor click behavior
-              event.preventDefault();
-
-              // Store hash
-              var hash = this.hash;
-
-              // Using jQuery's animate() method to add smooth page scroll
-              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-              $('html, body').animate({
-                scrollTop: $(hash).offset().top
-              }, 800, function(){
-
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-              });
-            } // End if
-        });
-        $("#vidModal").on('hidden.bs.modal', function (e) {
-            $("#vidModal iframe").attr("src", $("#vidModal iframe").attr("src"));
-        });
-    });
-</script>
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='MMERGE3';ftypes[3]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+  <script src="/js/bootstrap.min.js"></script>
 
 </body>
 </html>
