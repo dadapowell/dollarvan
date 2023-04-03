@@ -12,7 +12,7 @@ a {
     cursor: pointer;
 }
 a:hover {
-    text-decoration: none;
+    /* text-decoration: none; */
     color: #000;
 }
 .home {
